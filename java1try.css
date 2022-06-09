@@ -97,3 +97,11 @@ body {
     width:250px;
     height:128px
 }
+
+.inputmeth {
+    text-align: left;
+    margin-left: 20px;
+}
+.inputmeth input{
+    width: 40px;
+}
