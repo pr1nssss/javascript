@@ -72,7 +72,7 @@ function answer11(){
 function answer12() {
     let first = Number(document.getElementById('first4').value);
     let second = Number(document.getElementById('second4').value);
-    let answer = first * second
+    let answer = first * second;
         document.getElementById('answer12').innerHTML = answer
 }
 
@@ -92,7 +92,7 @@ function answer14() {
 function answer15() {
     let first = Number(document.getElementById('first7').value);
     let second = Number(document.getElementById('second7').value);
-        document.getElementById('answer15').innerHTML = 
+        document.getElementById('answer15').innerHTML = answer
 }
 
 // ANSWER 9 TO ANSWER 16 NOT YET DONE
@@ -107,11 +107,35 @@ function myFunction() {
         middleName : "",
         lastName : "Lumbres",
         fullName: function (){
-            return this.firstName + this.middleName + this.lastName;
+            return this.firstName + this.middleName + " " + this.lastName;
         }
     };
 
         document.getElementById('demo1').innerHTML = me.fullName();
-
-    
 }
+
+function toCelcius() {
+    let initial = Number(document.getElementById('initial').value);
+    let x = initial;
+    let celcius = parseInt((5/9) * (x-32));
+   
+
+     document.getElementById('demo2').innerHTML = celcius;
+     document.getElementById('demo3').innerHTML = celcius;
+     
+};
+
+function display() {
+    document.getElementById('date').innerHTML = "What's the date today?";
+}
+
+
+let celcius = function toCelcius1() {
+    let x = initial1;
+    answer = function() {
+            return (5/9) * (x-32)
+        }
+    
+    let initial1 = Number(document.getElementById('initial1').value);
+        document.getElementById('demo3').innerHTML = celcius.answer;
+    };

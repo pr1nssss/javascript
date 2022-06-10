@@ -6,7 +6,7 @@
             <link rel="icon" type="image" src="images/closehand.png">
             <script src="java1try.js"></script>
         </head>
-        <body id="body" onload="myFunction()">
+        <body id="body"  onload="myFunction()">
             <div class="header1">
                 <h1>JAVA1TRY</h1>
             </div>
@@ -173,14 +173,52 @@
                     <div class="title">
                         <h6>JS day 3</h6>
                     </div>
-                    <div class="content">
-                        <div class="subcontent">
-                            <p id="demo1">asd</p>
+                    <div class="content2">
+                        <div class="subcontent2">
+                            <p>
+                                <button onclick="intro()" style="width:100px">Who is he?
+                                    <script id="intro">
+                                        function intro() {
+                                        const person = {
+                                            name:"Prins",
+                                            age: 24,
+                                            networth: "$2,000,000"
+                                        };
+                                        alert("His name is " + person.name + ", he's " + person.age + " years old, and his current networth is " + person.networth)
+                                    }
+                                    </script>
+                                </button>
+                            </p>
+                            <p id="demo1">
+                                        This is just a test <!-- this is the "onload="myFunction" element on the body tag-->
+                            </p>
+                            <p>
+                                Fahrenheit:
+                                <input type="number" id="initial" style="width:50px">
+                                <br>
+                                Celcius:
+                                <button onclick="toCelcius()" style="width:100px">
+                                    <span id="demo2">?</span>
+                                </button>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="parts">
-                    <div class="title"></div>
+                    <div class="title">
+                        <h6>still javascript</h6>
+                    </div>
+                    <div class="content2">
+                        <div class="subcontent">
+                            <p>
+                                <button onmouseover="this.innerHTML=Date()" onmouseout="display()" style="width:220px">
+                                    <span id="date">What's the date today?</span>
+                                </button>
+                                <br><br>
+                                
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </body>
